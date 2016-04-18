@@ -1,4 +1,4 @@
 # reactForEveryone
 ```
-This Reposoitory is meant for practicing React
+This Repository is meant for practicing React
 ```
