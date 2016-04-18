@@ -22,6 +22,18 @@
 				}
 			},
 
+			getInitialState: function() {
+				return {
+					value: 1
+				}
+			},
+
+			componentDidMount: function() {
+				this.setState({
+					value: this.state.value = 20
+				});
+			},
+
 			render: function() {
 				var greeting = "World";
 
@@ -29,7 +41,10 @@
 					greeting = (<Person name={this.props.name} />)
 				}
 				return (
-					<h1>Hello {greeting}</h1>
+					<div>
+						<h1>Hello {greeting}</h1>
+						{this.state.value}
+					</div>
 				)
 			}
 		})
